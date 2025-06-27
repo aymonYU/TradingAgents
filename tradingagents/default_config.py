@@ -7,11 +7,12 @@ DEFAULT_CONFIG = {
         os.path.abspath(os.path.join(os.path.dirname(__file__), ".")),
         "dataflows/data_cache",
     ),
-    # LLM settings
-    "llm_provider": "openai",
-    "deep_think_llm": "o4-mini",
-    "quick_think_llm": "gpt-4o-mini",
-    "backend_url": "https://api.openai.com/v1",
+    # LLM settings - Fixed configuration using OpenRouter
+    "llm_provider": "openrouter",
+    "deep_think_llm": "deepseek/deepseek-chat-v3-0324:free",
+    "quick_think_llm": "deepseek/deepseek-chat-v3-0324:free",
+    "backend_url": "https://openrouter.ai/api/v1",
+    "api_key": "",
     # Debate and discussion settings
     "max_debate_rounds": 1,
     "max_risk_discuss_rounds": 1,
